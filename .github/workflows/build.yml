@@ -11,6 +11,7 @@ on:
       - '.github/workflows/build.yml'
       - 'src-tauri/**/*'
       - 'src/**/*'
+  workflow_dispatch:
 
 concurrency:
   group: ${{ github.ref }}-${{ github.workflow }}
